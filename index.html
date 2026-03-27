@@ -2,81 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jahnavi Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jahnavi Bhavani Peetani Portfolio</title>
+
+  <!-- AOS Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Hero Section -->
+  <section id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content" data-aos="fade-down">
+      <h1>Hi, I'm <span class="name">Jahnavi Bhavani Peetani</span></h1>
+      <h2><span class="typing"></span></h2>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+  </section>
 
-<!-- HERO -->
-<section class="hero">
-  <h1 id="typing"></h1>
-  <p>Aspiring Full Stack Developer</p>
-  <p class="tagline">Turning ideas into real-world solutions using code & AI</p>
-</section>
+  <!-- About Me Section -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I'm a 2nd-year BTech CSE student at Sri Vasavi Engineering College. I love building web applications and working on AI-driven projects.
+    </p>
+    <div class="skills">
+      <div class="skill-card" data-aos="fade-right">
+        <h3>Programming</h3>
+        <p>Python, C, C++, Java</p>
+      </div>
+      <div class="skill-card" data-aos="fade-left">
+        <h3>Frameworks & Tools</h3>
+        <p>Pandas, NumPy, React, Node.js, GitHub</p>
+      </div>
+      <div class="skill-card" data-aos="fade-right">
+        <h3>Soft Skills</h3>
+        <p>Critical Thinking, Teamwork, Problem Solving</p>
+      </div>
+    </div>
+  </section>
 
-<!-- ABOUT -->
-<section class="about">
-  <h2>About Me</h2>
-  <p>
-    I am Jahnavi Bhavani Peetani, a second-year B.Tech student 
-    in Computer Science and Technology at Sri Vasavi Engineering College.
-    I am passionate about building AI-powered and web-based solutions 
-    to solve real-world problems.
-  </p>
-</section>
+  <!-- Projects Section -->
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-aos="zoom-in">
+        <h3>Waterlogging Solutions</h3>
+        <p>DTI project to alert people from floods using water sensors & Arduino.</p>
+      </div>
+      <div class="project-card" data-aos="zoom-in">
+        <h3>Disaster Find</h3>
+        <p>Real-time crisis response platform using React, Tailwind, Leaflet, Gemini AI.</p>
+      </div>
+      <div class="project-card" data-aos="zoom-in">
+        <h3>AI Study Buddy</h3>
+        <p>AI-powered website to generate quizzes, summarize notes, and assist students.</p>
+      </div>
+    </div>
+  </section>
 
-<!-- SKILLS -->
-<section class="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>Python, C, C++, Java</li>
-    <li>Pandas, NumPy</li>
-    <li>GitHub, VS Code, Linux</li>
-    <li>Problem Solving, Teamwork</li>
-  </ul>
-</section>
+  <!-- Contact Section -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:jahnvaipeetani555@gmail.com">jahnvaipeetani555@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/jahnaviBhavani0567" target="_blank">github.com/jahnaviBhavani0567</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/jahnavi-bhavani-peetani-549815375/" target="_blank">linkedin.com/in/jahnavi-bhavani-peetani</a></p>
+  </section>
 
-<!-- PROJECTS -->
-<section class="projects">
-  <h2>Featured Projects</h2>
-
-  <div class="card">
-    <h3>Waterlogging Alert System</h3>
-    <p>Detects drainage levels and alerts people during floods using sensors and Arduino.</p>
-  </div>
-
-  <div class="card">
-    <h3>Disaster Find</h3>
-    <p>Real-time disaster management platform with live maps and emergency response system.</p>
-  </div>
-
-  <div class="card">
-    <h3>AI Study Buddy</h3>
-    <p>AI-powered tool for summaries, quizzes, and concept explanations for students.</p>
-  </div>
-
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section class="achievements">
-  <h2>Achievements</h2>
-  <ul>
-    <li>AWS Cloud Certification</li>
-    <li>6-week AI/ML Internship (IBM SkillBuild + AICTE)</li>
-    <li>Hackathon Participant (GDG)</li>
-    <li>Workshops on GenAI & Agentic AI</li>
-    <li>NSS Volunteer</li>
-  </ul>
-</section>
-
-<!-- CONTACT -->
-<section class="contact">
-  <h2>Contact</h2>
-  <p>Email: jahnvaipeetani555@gmail.com</p>
-  <p><a href="https://github.com/jahnaviBhavani0567">GitHub</a></p>
-  <p><a href="https://www.linkedin.com/in/jahnavi-bhavani-peetani-549815375">LinkedIn</a></p>
-</section>
-
-<script src="script.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+  </script>
 </body>
 </html>
